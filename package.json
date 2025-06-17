@@ -2,7 +2,7 @@
   "name": "eso-ai",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Booda1233.github.io/eso-ai",
+  "homepage": "https://Booda1233.github.io/esoai",
   "type": "module",
   "scripts": {
     "dev": "vite",
