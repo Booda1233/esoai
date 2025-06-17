@@ -1,0 +1,8 @@
+{
+  "name": "Esraa Safwat AI Chat",
+  "description": "A sophisticated AI chatbot application named Esraa Safwat, featuring chat history, image and file uploads, and voice input.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "prompt": ""
+}
