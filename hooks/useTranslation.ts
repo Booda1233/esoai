@@ -74,7 +74,7 @@ export const useTranslation = () => {
       }
       if (errorLoadingTranslations) {
         // Since TranslationKey is string, direct use in template literal is fine.
-        return `Error! (${key})`;
+        return ` (${key})`;
       }
 
       const langData = translations[language];

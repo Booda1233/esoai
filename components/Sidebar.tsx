@@ -81,7 +81,7 @@ const Sidebar: React.FC<SidebarProps> = ({
               aria-label={t('createNewChat')}
             >
               <PlusIcon className="w-4 h-4 sm:w-5 sm:h-5 me-2" />
-              {t('newChat')}
+              {t('Esraa')}
             </button>
           </div>
           <h2 className="text-xs text-gray-500 dark:text-gray-400 font-semibold uppercase tracking-wider mb-2 sm:mb-3 px-3 sm:px-4">{t('recentChats')}</h2>
