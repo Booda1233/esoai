@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html dir="ltr"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esraa Safwat AI Chat</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Placeholder for tailwind.config.js if it were here.
+    // Ensure darkMode is 'class' if you have a config file.
+    // Example:
+    // tailwind.config = {
+    //   darkMode: 'class',
+    //   theme: {
+    //     extend: {},
+    //   },
+    //   plugins: [],
+    // }
+  </script>
+  <style>
+    /* For custom scrollbars */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #4b5563; /* gray-600 */
+      border-radius: 4px;
+    }
+    html.dark ::-webkit-scrollbar-thumb {
+      background-color: #6b7280; /* gray-500 */
+    }
+    ::-webkit-scrollbar-track {
+      background-color: #1f2937; /* gray-800 */
+    }
+    html:not(.dark) ::-webkit-scrollbar-track {
+      background-color: #f3f4f6; /* gray-100 */
+    }
+
+    body {
+      font-family: 'Arial', sans-serif; /* A common, clean font */
+    }
+
+    /* Splash Screen Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeIn { 
+      animation: fadeIn 0.5s ease-out forwards; 
+    }
+    .animate-fadeInUp-icon { 
+      animation: fadeInUp 0.6s ease-out 0.2s forwards; opacity: 0; 
+    }
+    .animate-fadeInUp-title { 
+      animation: fadeInUp 0.6s ease-out 0.4s forwards; opacity: 0; 
+    }
+    .animate-fadeInUp-subtitle { 
+      animation: fadeInUp 0.6s ease-out 0.6s forwards; opacity: 0; 
+    }
+
+    /* Ensure html and body take full height for sticky footer/layouts */
+    html, body, #root {
+      height: 100%;
+    }
+  </style>
+
+<link rel="stylesheet" href="/index.css">
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.5.1",
+    "@/assets/icons": "./assets/icons.tsx",
+    "@/contexts/AppSettingsContext": "./contexts/AppSettingsContext.tsx",
+    "@/hooks/useAppSettings": "./hooks/useAppSettings.ts",
+    "@/hooks/useTranslation": "./hooks/useTranslation.ts",
+    "@/locales/en.json": "./locales/en.json",
+    "@/locales/ar.json": "./locales/ar.json"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/esoai/assets/index-CWWuAYtz.js"></script>
+</head>
+<body class="bg-white dark:bg-gray-900">
+  <div id="root"></div>
+</body>
+</html>
