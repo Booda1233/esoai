@@ -63,7 +63,7 @@ const Sidebar: React.FC<SidebarProps> = ({
       <div className={sidebarClasses}>
         {/* Header */}
         <div className="flex items-center p-3 sm:p-4 border-b border-gray-300 dark:border-gray-700 justify-between">
-           <h1 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-white truncate">{t('appNameShort')}</h1>
+           <h1 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-white truncate">{t('Esraa Safwat')}</h1>
            <IconButton
             icon={<XMarkIcon className="w-5 h-5 sm:w-6 sm:h-6" />}
             onClick={onToggle} // Always use onToggle to close
